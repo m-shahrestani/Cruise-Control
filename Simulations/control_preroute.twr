@@ -1,0 +1,194 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n 3
+-fastpaths -xml control_preroute.twx control_map.ncd -o control_preroute.twr
+control.pcf
+
+Design file:              control_map.ncd
+Physical constraint file: control.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clock
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+change<0>   |    2.835(R)|   -0.045(R)|clock_BUFGP       |   0.000|
+change<1>   |    2.570(R)|   -0.297(R)|clock_BUFGP       |   0.000|
+hooshyari<0>|    2.835(R)|   -0.045(R)|clock_BUFGP       |   0.000|
+speed<0>    |    3.469(R)|    0.285(R)|clock_BUFGP       |   0.000|
+speed<1>    |    3.469(R)|    0.285(R)|clock_BUFGP       |   0.000|
+speed<2>    |    3.075(R)|    0.236(R)|clock_BUFGP       |   0.000|
+speed<3>    |    3.075(R)|    0.285(R)|clock_BUFGP       |   0.000|
+speed<4>    |    3.075(R)|    0.034(R)|clock_BUFGP       |   0.000|
+speed<5>    |    3.075(R)|    0.034(R)|clock_BUFGP       |   0.000|
+speed<6>    |    3.075(R)|    0.385(R)|clock_BUFGP       |   0.000|
+speed<7>    |    3.075(R)|    0.385(R)|clock_BUFGP       |   0.000|
+vfeli<0>    |    3.469(R)|   -0.581(R)|clock_BUFGP       |   0.000|
+vfeli<1>    |    3.469(R)|   -0.581(R)|clock_BUFGP       |   0.000|
+vfeli<2>    |    2.890(R)|   -0.581(R)|clock_BUFGP       |   0.000|
+vfeli<3>    |    2.637(R)|   -0.581(R)|clock_BUFGP       |   0.000|
+vfeli<4>    |    1.997(R)|   -0.581(R)|clock_BUFGP       |   0.000|
+vfeli<5>    |    2.576(R)|   -0.098(R)|clock_BUFGP       |   0.000|
+vfeli<6>    |    1.418(R)|    0.385(R)|clock_BUFGP       |   0.000|
+vfeli<7>    |    1.997(R)|    0.385(R)|clock_BUFGP       |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock hooshyari<1>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+hooshyari<0>|    0.785(F)|    0.594(F)|nxtstate_not0001  |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock hooshyari<2>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+hooshyari<0>|    0.785(F)|    0.594(F)|nxtstate_not0001  |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clock to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+eq          |    5.687(R)|clock_BUFGP       |   0.000|
+eq1         |    5.687(R)|clock_BUFGP       |   0.000|
+gt          |    5.687(R)|clock_BUFGP       |   0.000|
+gt1         |    5.687(R)|clock_BUFGP       |   0.000|
+lt          |    5.687(R)|clock_BUFGP       |   0.000|
+lt1         |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<0>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<1>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<2>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<3>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<4>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<5>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<6>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout1<7>    |    5.687(R)|clock_BUFGP       |   0.000|
+vout<0>     |    6.006(R)|clock_BUFGP       |   0.000|
+vout<1>     |    6.006(R)|clock_BUFGP       |   0.000|
+vout<2>     |    6.006(R)|clock_BUFGP       |   0.000|
+vout<3>     |    6.006(R)|clock_BUFGP       |   0.000|
+vout<4>     |    6.006(R)|clock_BUFGP       |   0.000|
+vout<5>     |    6.006(R)|clock_BUFGP       |   0.000|
+vout<6>     |    6.006(R)|clock_BUFGP       |   0.000|
+vout<7>     |    6.006(R)|clock_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock hooshyari<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+pashesh<0>  |    6.404(F)|nxtstate_not0001  |   0.000|
+pashesh<1>  |    6.404(F)|nxtstate_not0001  |   0.000|
+pashesh<2>  |    6.404(F)|nxtstate_not0001  |   0.000|
+tormoz      |    6.404(F)|nxtstate_not0001  |   0.000|
+------------+------------+------------------+--------+
+
+Clock hooshyari<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+pashesh<0>  |    6.404(F)|nxtstate_not0001  |   0.000|
+pashesh<1>  |    6.404(F)|nxtstate_not0001  |   0.000|
+pashesh<2>  |    6.404(F)|nxtstate_not0001  |   0.000|
+tormoz      |    6.404(F)|nxtstate_not0001  |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+hooshyari<1>   |    2.835|    2.835|         |         |
+hooshyari<2>   |    2.835|    2.835|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock hooshyari<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |         |         |    2.487|         |
+hooshyari<1>   |         |         |    1.364|    1.364|
+hooshyari<2>   |         |         |    0.785|    0.785|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock hooshyari<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |         |         |    2.487|         |
+hooshyari<1>   |         |         |    1.364|    1.364|
+hooshyari<2>   |         |         |    0.785|    0.785|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+change<0>      |changewire<0>  |    6.159|
+change<0>      |changewire<1>  |    6.473|
+change<1>      |changewire<1>  |    6.473|
+hooshyari<0>   |changewire<0>  |    6.159|
+hooshyari<0>   |changewire<1>  |    6.473|
+hooshyari<1>   |changewire<0>  |    6.159|
+hooshyari<1>   |changewire<1>  |    6.473|
+hooshyari<2>   |changewire<0>  |    6.159|
+hooshyari<2>   |changewire<1>  |    6.220|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Sep 10 11:59:53 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4491 MB
+
+
+

@@ -1,0 +1,6 @@
+verilog work "half_adder.v"
+verilog work "one_bit_comp.v"
+verilog work "full_adder.v"
+verilog work "eight_bit_comp.v"
+verilog work "add_sub.v"
+verilog work "mohasebe_mantegh.v"

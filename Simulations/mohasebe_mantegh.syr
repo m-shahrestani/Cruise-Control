@@ -1,0 +1,451 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: mohasebe_mantegh.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mohasebe_mantegh.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mohasebe_mantegh"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : mohasebe_mantegh
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "half_adder.v" in library work
+Compiling verilog file "one_bit_comp.v" in library work
+Module <half_adder> compiled
+Compiling verilog file "full_adder.v" in library work
+Module <one_bit_comp> compiled
+Compiling verilog file "eight_bit_comp.v" in library work
+Module <full_adder> compiled
+Compiling verilog file "add_sub.v" in library work
+Module <eight_bit_comp> compiled
+Compiling verilog file "mohasebe_mantegh.v" in library work
+Module <add_sub> compiled
+Module <mohasebe_mantegh> compiled
+No errors in compilation
+Analysis of file <"mohasebe_mantegh.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mohasebe_mantegh> in library <work>.
+
+Analyzing hierarchy for module <eight_bit_comp> in library <work>.
+
+Analyzing hierarchy for module <add_sub> in library <work>.
+
+Analyzing hierarchy for module <one_bit_comp> in library <work>.
+
+Analyzing hierarchy for module <full_adder> in library <work>.
+
+Analyzing hierarchy for module <half_adder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mohasebe_mantegh>.
+Module <mohasebe_mantegh> is correct for synthesis.
+ 
+Analyzing module <eight_bit_comp> in library <work>.
+Module <eight_bit_comp> is correct for synthesis.
+ 
+Analyzing module <one_bit_comp> in library <work>.
+Module <one_bit_comp> is correct for synthesis.
+ 
+Analyzing module <add_sub> in library <work>.
+Module <add_sub> is correct for synthesis.
+ 
+Analyzing module <full_adder> in library <work>.
+Module <full_adder> is correct for synthesis.
+ 
+Analyzing module <half_adder> in library <work>.
+Module <half_adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <one_bit_comp>.
+    Related source file is "one_bit_comp.v".
+    Found 1-bit xor2 for signal <axnb$xor0000>.
+Unit <one_bit_comp> synthesized.
+
+
+Synthesizing Unit <half_adder>.
+    Related source file is "half_adder.v".
+    Found 1-bit xor2 for signal <sum>.
+Unit <half_adder> synthesized.
+
+
+Synthesizing Unit <eight_bit_comp>.
+    Related source file is "eight_bit_comp.v".
+WARNING:Xst:653 - Signal <xl> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <xg> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <xe> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+Unit <eight_bit_comp> synthesized.
+
+
+Synthesizing Unit <full_adder>.
+    Related source file is "full_adder.v".
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <add_sub>.
+    Related source file is "add_sub.v".
+WARNING:Xst:653 - Signal <b> is used but never assigned. This sourceless signal will be automatically connected to value 00000101.
+Unit <add_sub> synthesized.
+
+
+Synthesizing Unit <mohasebe_mantegh>.
+    Related source file is "mohasebe_mantegh.v".
+WARNING:Xst:653 - Signal <mosbat> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <manfi> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:646 - Signal <co2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <co1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <eq>.
+    Found 1-bit register for signal <gt>.
+    Found 1-bit register for signal <lt>.
+    Found 8-bit register for signal <vout>.
+    Found 1-bit 4-to-1 multiplexer for signal <eq$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <gt$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <lt$mux0000>.
+    Found 8-bit 4-to-1 multiplexer for signal <vout$mux0000>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+Unit <mohasebe_mantegh> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 3
+ 8-bit register                                        : 1
+# Multiplexers                                         : 4
+ 1-bit 4-to-1 multiplexer                              : 3
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 40
+ 1-bit xor2                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Multiplexers                                         : 4
+ 1-bit 4-to-1 multiplexer                              : 3
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 40
+ 1-bit xor2                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mohasebe_mantegh> ...
+
+Optimizing unit <eight_bit_comp> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mohasebe_mantegh, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mohasebe_mantegh.ngr
+Top Level Output File Name         : mohasebe_mantegh
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 53
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 10
+#      LUT4                        : 32
+#      MUXF5                       : 8
+#      VCC                         : 1
+# FlipFlops/Latches                : 11
+#      FD                          : 8
+#      FDR                         : 2
+#      FDRSE                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 18
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       25  out of   3584     0%  
+ Number of Slice Flip Flops:              2  out of   7168     0%  
+ Number of 4 input LUTs:                 43  out of   7168     0%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    141    21%  
+    IOB Flip Flops:                       9
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 11    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.085ns (Maximum Frequency: 479.513MHz)
+   Minimum input arrival time before clock: 8.818ns
+   Maximum output required time after clock: 6.280ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.085ns (frequency: 479.513MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               2.085ns (Levels of Logic = 1)
+  Source:            gt (FF)
+  Destination:       gt (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: gt to gt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.626   0.804  gt (gt_OBUF)
+     LUT3:I2->O            1   0.479   0.000  Mmux_gt_mux000021 (Mmux_gt_mux00002)
+     FDR:D                     0.176          gt
+    ----------------------------------------
+    Total                      2.085ns (1.281ns logic, 0.804ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 173 / 15
+-------------------------------------------------------------------------
+Offset:              8.818ns (Levels of Logic = 7)
+  Source:            vmatloob<1> (PAD)
+  Destination:       lt (FF)
+  Destination Clock: clock rising
+
+  Data Path: vmatloob<1> to lt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.715   1.250  vmatloob_1_IBUF (a1/FA2/HA1/Mxor_sum_Result_and0001)
+     LUT4:I0->O            2   0.479   1.040  e1/c4/lt43 (e1/c4/lt43)
+     LUT4:I0->O            1   0.479   0.000  e1/c4/lt701 (e1/c4/lt70)
+     MUXF5:I1->O           1   0.314   0.976  e1/c4/lt70_f5 (e1/l<3>)
+     LUT4:I0->O            1   0.479   0.976  e1/c7/lt49 (e1/c7/lt49)
+     LUT4:I0->O            1   0.479   0.976  Mmux_lt_mux000021_SW0 (N19)
+     LUT3:I0->O            1   0.479   0.000  Mmux_lt_mux000021 (Mmux_lt_mux00002)
+     FDR:D                     0.176          lt
+    ----------------------------------------
+    Total                      8.818ns (3.600ns logic, 5.218ns route)
+                                       (40.8% logic, 59.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              6.280ns (Levels of Logic = 1)
+  Source:            gt (FF)
+  Destination:       gt (PAD)
+  Source Clock:      clock rising
+
+  Data Path: gt to gt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.626   0.745  gt (gt_OBUF)
+     OBUF:I->O                 4.909          gt_OBUF (gt)
+    ----------------------------------------
+    Total                      6.280ns (5.535ns logic, 0.745ns route)
+                                       (88.1% logic, 11.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.21 secs
+ 
+--> 
+
+Total memory usage is 4521480 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

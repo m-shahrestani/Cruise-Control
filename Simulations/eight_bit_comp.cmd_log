@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/university/term4/amini/lab/codes/project_final/eight_bit_comp.xst" -ofn "D:/university/term4/amini/lab/codes/project_final/eight_bit_comp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 eight_bit_comp.ngc eight_bit_comp.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o eight_bit_comp_map.ncd eight_bit_comp.ngd eight_bit_comp.pcf 
+par -w -intstyle ise -ol high -t 1 eight_bit_comp_map.ncd eight_bit_comp.ncd eight_bit_comp.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml eight_bit_comp.twx eight_bit_comp.ncd -o eight_bit_comp.twr eight_bit_comp.pcf 

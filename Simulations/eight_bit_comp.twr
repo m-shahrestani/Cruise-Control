@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n 3
+-fastpaths -xml eight_bit_comp.twx eight_bit_comp.ncd -o eight_bit_comp.twr
+eight_bit_comp.pcf
+
+Design file:              eight_bit_comp.ncd
+Physical constraint file: eight_bit_comp.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a<0>           |eq             |    7.554|
+a<0>           |gt             |   10.424|
+a<0>           |lt             |   10.904|
+a<1>           |eq             |    7.688|
+a<1>           |gt             |   10.255|
+a<1>           |lt             |   10.839|
+a<2>           |eq             |    8.363|
+a<2>           |gt             |    9.288|
+a<2>           |lt             |    9.939|
+a<3>           |eq             |    8.497|
+a<3>           |gt             |    9.496|
+a<3>           |lt             |    9.828|
+a<4>           |eq             |    9.100|
+a<4>           |gt             |    7.771|
+a<4>           |lt             |    8.360|
+a<5>           |eq             |    9.275|
+a<5>           |gt             |    8.396|
+a<5>           |lt             |    9.230|
+a<6>           |eq             |    9.783|
+a<6>           |gt             |    8.959|
+a<6>           |lt             |    9.390|
+a<7>           |eq             |   10.535|
+a<7>           |gt             |    7.054|
+a<7>           |lt             |    7.784|
+b<0>           |eq             |    7.141|
+b<0>           |gt             |    9.645|
+b<0>           |lt             |   10.193|
+b<1>           |eq             |    6.944|
+b<1>           |gt             |    9.812|
+b<1>           |lt             |   10.465|
+b<2>           |eq             |    8.047|
+b<2>           |gt             |    9.033|
+b<2>           |lt             |    9.748|
+b<3>           |eq             |    8.244|
+b<3>           |gt             |    9.164|
+b<3>           |lt             |    9.476|
+b<4>           |eq             |    9.105|
+b<4>           |gt             |    7.580|
+b<4>           |lt             |    8.190|
+b<5>           |eq             |    9.212|
+b<5>           |gt             |    8.489|
+b<5>           |lt             |    9.030|
+b<6>           |eq             |   10.298|
+b<6>           |gt             |    9.171|
+b<6>           |lt             |    9.985|
+b<7>           |eq             |   10.906|
+b<7>           |gt             |    7.451|
+b<7>           |lt             |    8.181|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Sep 09 13:25:18 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4491 MB
+
+
+

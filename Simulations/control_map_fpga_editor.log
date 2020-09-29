@@ -1,0 +1,53 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\university\term4\amini\lab\codes\project_final
+#Date/Time:
+#:T   Wed Sep 09 23:33:28 2020
+#------------------------------
+	#Reading control_map.ncd...
+	#Loading device for application Rf_Device from file '3s400.nph' in environment D:\ISE\14.7\ISE_DS\ISE\.
+	#   "control" is an NCD, version 3.2, device xc3s400, package pq208, speed -5
+	#Design creation date: 2020.09.09.19.00.45
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+hilite -c tan
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#3
+unhilite
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+select site 'VCC_X30Y19'
+	#site "VCC_X30Y19",  type = VCC  (RPM grid X-1Y-1)
+	#7
+unselect -all
+	#8
+select site 'SLICE_X54Y33'
+	#site "SLICE_X54Y33",  type = SLICEM  (RPM grid X84Y69)
+	#9
+unselect -all
+	#10
+select site 'SLICE_X34Y23'
+	#site "SLICE_X34Y23",  type = SLICEM  (RPM grid X54Y49)
+	#11
+unselect -all
+	#12
+unselect -all
+	#13
+select -k comp 'change<0>'
+	#14
+unselect comp 'change<0>'
+	#15
+select -k comp 'change<1>'
+	#16
+unselect -all
+	#17
+unselect -all

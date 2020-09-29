@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/university/term4/amini/lab/codes/project_final/full_adder.xst" -ofn "D:/university/term4/amini/lab/codes/project_final/full_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 full_adder.ngc full_adder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o full_adder_map.ncd full_adder.ngd full_adder.pcf 
+par -w -intstyle ise -ol high -t 1 full_adder_map.ncd full_adder.ncd full_adder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml full_adder.twx full_adder.ncd -o full_adder.twr full_adder.pcf 

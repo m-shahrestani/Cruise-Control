@@ -1,0 +1,32 @@
+Running: D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/amin/project_final/final_test_isim_beh.exe -prj D:/amin/project_final/final_test_beh.prj work.final_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/amin/project_final/half_adder.v" into library work
+Analyzing Verilog file "D:/amin/project_final/one_bit_comp.v" into library work
+Analyzing Verilog file "D:/amin/project_final/full_adder.v" into library work
+Analyzing Verilog file "D:/amin/project_final/eight_bit_comp.v" into library work
+Analyzing Verilog file "D:/amin/project_final/add_sub.v" into library work
+Analyzing Verilog file "D:/amin/project_final/mohasebe_mantegh.v" into library work
+Analyzing Verilog file "D:/amin/project_final/control.v" into library work
+Analyzing Verilog file "D:/amin/project_final/final_test.v" into library work
+Analyzing Verilog file "D:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/amin/project_final/final_test.v" Line 45: Port gt1 is not connected to this instance
+Completed static elaboration
+Compiling module one_bit_comp
+Compiling module eight_bit_comp
+Compiling module half_adder
+Compiling module full_adder
+Compiling module add_sub
+Compiling module mohasebe_mantegh
+Compiling module control
+Compiling module final_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable D:/amin/project_final/final_test_isim_beh.exe
+Fuse Memory Usage: 34656 KB
+Fuse CPU Usage: 984 ms

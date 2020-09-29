@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n 3
+-fastpaths -xml add_sub.twx add_sub.ncd -o add_sub.twr add_sub.pcf
+
+Design file:              add_sub.ncd
+Physical constraint file: add_sub.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a<0>           |co             |    9.536|
+a<0>           |s<0>           |    5.779|
+a<0>           |s<1>           |    7.775|
+a<0>           |s<2>           |    7.929|
+a<0>           |s<3>           |    7.993|
+a<0>           |s<4>           |    8.343|
+a<0>           |s<5>           |    9.647|
+a<0>           |s<6>           |    9.740|
+a<0>           |s<7>           |   10.452|
+a<1>           |co             |    9.294|
+a<1>           |s<1>           |    7.535|
+a<1>           |s<2>           |    7.516|
+a<1>           |s<3>           |    7.690|
+a<1>           |s<4>           |    8.040|
+a<1>           |s<5>           |    9.344|
+a<1>           |s<6>           |    9.437|
+a<1>           |s<7>           |   10.212|
+a<2>           |co             |    9.371|
+a<2>           |s<2>           |    7.394|
+a<2>           |s<3>           |    7.678|
+a<2>           |s<4>           |    8.028|
+a<2>           |s<5>           |    9.332|
+a<2>           |s<6>           |    9.425|
+a<2>           |s<7>           |   10.076|
+a<3>           |co             |    9.567|
+a<3>           |s<3>           |    6.939|
+a<3>           |s<4>           |    6.858|
+a<3>           |s<5>           |    7.890|
+a<3>           |s<6>           |    7.983|
+a<3>           |s<7>           |   10.272|
+a<4>           |co             |    8.018|
+a<4>           |s<4>           |    6.920|
+a<4>           |s<5>           |    6.896|
+a<4>           |s<6>           |    7.160|
+a<4>           |s<7>           |    9.089|
+a<5>           |co             |    8.229|
+a<5>           |s<5>           |    6.649|
+a<5>           |s<6>           |    7.063|
+a<5>           |s<7>           |    8.938|
+a<6>           |co             |    7.743|
+a<6>           |s<6>           |    7.207|
+a<6>           |s<7>           |    8.562|
+a<7>           |co             |    7.573|
+a<7>           |s<7>           |    8.642|
+sel            |co             |    8.206|
+sel            |s<1>           |    7.697|
+sel            |s<2>           |    8.321|
+sel            |s<3>           |    8.202|
+sel            |s<4>           |    8.552|
+sel            |s<5>           |    9.856|
+sel            |s<6>           |    9.949|
+sel            |s<7>           |    8.974|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Sep 09 13:22:18 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4491 MB
+
+
+
